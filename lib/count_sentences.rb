@@ -18,13 +18,13 @@ class String
   end
 
   def count_sentences
-    count = 0
-  self.split.each do |word|
-    if word.end_with?("?","!", ".") == true
-      count +=1
+  count = 0
+    self.split.each do |word|
+      if word.end_with?("?","!", ".") == true
+        count +=1
+      end
     end
-  end
   count
-end
+  end
 
 end
